@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<body>
+    <p>Your cube has a volume of <span id="answer">___</span> units cubed.</p>   
+
+<script>
+var length = document.getElementById("length");
+var answer = document.getElementById("answer");
+
+var side = prompt("Enter the length/height/width of your cube", 2);
+
+length.innerText = side;
+
+var volume = Math.pow(side,3);
+
+answer.innerText = volume;
+  </script>  
+
+    </body>
+</html>

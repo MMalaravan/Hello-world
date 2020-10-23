@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volume of Cuboid</title>
+    </head>
+    <body>
+        <h1> Volume of Cuboid </h1>
+        <form>
+        <input type="number"class="js-length"placeholder="length"/> 
+        <input type ="number"class="js-breadth"placeholder="breadth"/>
+        <input type="number"class="js-height"placeholder="height"/> 
+        <input type ="button"value="go" class="js-go"/>
+       </form>
+       
+       <script>
+
+var length1=document.querySelector(".js-length");
+var breadth1=document.querySelector(".js-breadth");
+var height1=document.querySelector(".js-height");
+var go=document.querySelector(".js-go");
+var f=function(){
+   var length=parseFloat(length1.value);
+   var  breadth=parseFloat(breadth1.value);
+   var  height=parseFloat(height1.value);
+   var result=length*breadth*height;
+   
+   if(result){
+      alert("volume of cuboid is = "+result);
+      }else{
+      alert("Nope,enter values!");
+      
+   }};
+   
+ 
+   go.addEventListener("click",function(){      
+   
+   
+   f();
+   
+   
+  }); 
+  </script>      
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<meta charset=UTF-8 />
+<title>What number's biggert?</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt;
+a=7;
+b=6;
+c=3;
+d=4;
+e=9;
+if (a>b && a>c && a>d && a>e)
+{
+    txt = (a);
+}
+else if (b>a && b>c && b>d && b>e)
+{
+    txt = (b);
+}
+else if (c>a && c>b && c>d && c>e)
+{
+    txt = (c);
+}
+else if (d>a && d>c && d>b && d>e)
+{
+    txt = (d);
+}
+else
+{
+    txt = (e);
+}
+
+window.alert(document.getElementById("demo"). innerHTML = txt);
+
+</script>
+</body>
+</html>
